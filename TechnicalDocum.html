@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>C++ Technical Documentation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="menu">
+      <h3>Documentation Menu</h3>
+      <nav>
+        <a href="#whatisc++">What is C++</a>
+        <a href="#objects&classes">Objects and Classes</a>
+        <a href="#inheritance">Inheritance</a>
+        <a href="#polymorphism">Polymorphism</a>
+        <a href="#abstraction">Abstraction</a>
+        <a href="#encapsulation">Encapsulation</a>
+        <!-- Add more topics as needed -->
+      </nav>
+    </div>
+    <div class="content">
+      <section>
+        <h2>What is Java?</h2>
+        <p>Java is a programming language and computing platform first released by Sun Microsystems in 1995.
+          It has evolved from humble beginnings to power a large share of today’s digital world, by providing
+          the reliable platform upon which many services and applications are built.
+          New, innovative products and digital services designed for the future continue to rely on Java, as well.
+
+          While most modern Java applications combine the Java runtime and application together,
+          there are still many applications and even some websites that will not function unless you have a
+          desktop Java installed. Java.com, this website, is intended for consumers who may still require Java
+          for their desktop applications specifically applications targeting Java 8. Developers as well
+          as users that would like to learn Java programming should visit the dev.
+          java website instead and business users should visit oracle.com/java for more information.</p>
+
+        <p>Let Us Now Look At the program: </p>
+        <p>public class HelloWorldApp { <br>
+          public static void main(String[] args){ <br>
+          system.outprintin("Hello World")} <br>
+          }
+        </p>
+        <p>Java is Object Oriented Programming <br>
+          The main pillars of Object Oriented Programming Language are:
+        </p>
+        <ul>
+          <li>Inheritance</li>
+          <li>Polymorphism</li>
+          <li>Abstraction</li>
+          <li>Encapsulation</li>
+        </ul>
+      </section>
+      <section id="inheritance">
+        <h2>Inheritance</h2>
+        <p>Inheritance is a mechanism in C++ where an object of a class can
+          inherit properties and behaviors from its parent class. Inheritance in Java is a concept that acquires the
+          properties from one class to other classes; for example, the relationship between father and son. Inheritance
+          in Java is a process of acquiring all the behaviours of a parent object The concept of inheritance in Java is
+          that new classes can be constructed on top of older ones. You can use the parent class’s methods and
+          properties when you inherit from an existing class. You can also add additional fields and methods to your
+          existing class.
+          The parent-child relationship, also known as the IS-A relationship, is represented by inheritance.</p>
+        <h4>Mode of Inheritance :</h4>
+        <p><b>Public Mode : </b> If we derive a sub class from a public base class. Then the public member of the base
+          class will become public in the derived class and protected members of the base class will become protected in
+          derived class. Protected mode: If we derive a sub class from a Protected base class. </p>
+        <p><b>Protected Mode : </b>If we derive a sub class from a Protected base class. Then both public member and
+          protected members of the base class will become protected in derived class.</p>
+        <p><b>Private Mode : </b>If we derive a sub class from a Private base class. Then both public member and
+          protected members of the base class will become Private in derived class.</p>
+        <p>The below table summarizes the above three modes and shows the access specifier of the members of base class
+          in the sub class when derived in public, protected and private modes:</p>
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/table-class.png" alt="error">
+        <h4>Types of Inheritance in Java : </h4>
+        <p><b>Single Inheritance : </b>It occurs when a subclass extends a superclass, resulting in a single chain of
+          inheritance.</p>
+        <p><b>Multiple Inheritance : </b>It occurs when a subclass extends multiple superclasses, but Java doesn't
+          support this type of inheritance due to the Diamond Problem.</p>
+        <p><b>Multi-Level Inheritance : </b>It occurs when a subclass extends a subclass, which in turn extends a
+          superclass.</p>
+        <p><b>Hieratical Inheritance : </b>It occurs when multiple subclasses extend a single superclass.</p>
+        <p><b>Hybrid Inheritance : </b>It is a combination of two or more types of inheritance. Java doesn't support
+          this type of inheritance directly, but it can be achieved using interfaces.</p>
+      </section>
+      <section id="polymorphism">
+        <h2>Polymorphism</h2>
+        <p>Polymorphism is a concept in C++ that allows objects of different classes to be used
+          interchangeably.Polymorphism is a fundamental concept in Object-Oriented Programming (OOP) that allows objects
+          of different classes to be treated as objects of the same class. Polymorphism is often described as "one
+          interface, multiple implementations."
+
+          In Java, polymorphism is achieved through method overriding and method overloading. Method overriding allows a
+          subclass to provide a different implementation of a method defined in its superclass. Method overloading
+          allows a class to have multiple methods with the same name but with different parameters.
+
+          By using polymorphism, you can write code that is more flexible and adaptable to change. It also makes it
+          easier to maintain and extend your code, since you can modify the behavior of an object without affecting the
+          code that uses it.
+        </p>
+        <h4>In Java Polymorphism Is Mainly Divided Into Two Types: </h4>
+        <p>1.Compile time polymorphism <br>
+          2.Runtime polymorphism</p>
+        <p>Compile time polymorphism: This type of polymorphism is achieved by function overloading or operator
+          overloading. <br>
+          Runtime polymorphism: This type of polymorphismis achieved by Function Overriding.
+        </p>
+      </section>
+      <section id="abstraction">
+        <h2>Abstraction</h2>
+        <p>Abstraction is a fundamental concept in Object-Oriented Programming (OOP) that involves hiding the complexity
+          of an object and exposing only the essential features to the client. It is used to represent the essential
+          properties and behaviors of an object, without exposing the underlying implementation details. Abstraction is
+          achieved through abstract classes and interfaces in Java. An abstract class is a class that cannot be
+          instantiated, but can be inherited by other classes. An interface is a blueprint for classes that provides a
+          common set of methods that must be implemented by the implementing class. By using abstraction, you can create
+          a higher level of abstraction for complex objects, making the objects easier to understand, use, and maintain.
+          This also helps to reduce code duplication and improve code modularity and reusability. In short, abstraction
+          is used to provide a simplified view of a complex system by hiding the implementation details, and exposing
+          only the essential features and behaviors of an object to the client.
+        </p>
+        <p><b>Abstraction using Classes: </b>An abstraction can be achieved using classes. A class is used to group all
+          the data members and member functions into a single unit by using the access specifiers. A class has the
+          responsibility to determine which data member is to be visible outside and which is not.</p>
+        <p><b>Abstraction in Header Files: </b>An another type of abstraction is header file. For example, pow()
+          function available is used to calculate the power of a number without actually knowing which algorithm
+          function uses to calculate the power. Thus, we can say that header files hides all the implementation details
+          from the user.</p>
+        <p><b>Advantages of Data Abstraction: </b> <br>
+          1.Helps the User to avoid writing the low level code. <br>
+          2.Avoids code duplication and increases reusability. <br>
+          3.Can change internal implementation of class independently without affecting the user. <br>
+          4.Helps to increase security of an application or program as only important details are provided to the user.
+        </p>
+      </section>
+      <section id="encapsulation">
+        <h2>Encapsulation</h2>
+        <p>Encapsulation is a technique in C++ that enables the programmer to restrict access to certain data members
+          and member functions.Encapsulation is a fundamental concept in Object-Oriented Programming (OOP) that involves
+          wrapping an object's data and behavior within a single unit or object, protecting it from outside interference
+          or modification. In Java, encapsulation is achieved by using classes and objects.
+
+          A class in Java is a blueprint that defines the properties and behaviors of an object. By using the concepts
+          of encapsulation, you can control the visibility of the data within a class, and restrict access to the data
+          from outside the class. This is achieved through the use of access modifiers such as "private," "protected,"
+          and "public."
+
+          The private access modifier makes a field or method accessible only within the class. The protected access
+          modifier makes a field or method accessible within the class and any subclasses. The public access modifier
+          makes a field or method accessible from anywhere.
+
+          In addition to access control, you can use methods within a class to access and modify the data within the
+          class, creating a layer of abstraction between the data and the client. This allows you to control the data
+          and behavior of an object, and to maintain the integrity and consistency of the data. </p>
+          <p>
+          In short, encapsulation in Java is the technique of wrapping an object's data and behavior within a single
+          unit or object, protecting it from outside interference or modification, and allowing for better control and
+          maintenance of the data and behavior of an object.</p>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
